@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdiCraft</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <div class="menu" id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a href="redstone.html">Redstone</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="descargar.html">Descargar Minecraft</a>
+        <a href="modss.html">Cómo Instalar Mods</a>
+        <a href="terminos.html">Terminos y condiciones</a>
+    </div>
+    <header>
+        <img src="imagn de minecraft.jpg" alt="cabecera" class="header-image">
+        <h1>EdiCraft</h1>
+    </header>
+    <main>
+        <p>La mejor página de Minecraft que encontrarás... ¡EDICRAFT!</p>
+        <section>
+            <h2>¿Qué es EdiCraft?</h2>
+            <p>Es una página simple que hice para informar a la comunidad de Minecraft sobre este gran juego y sus posibilidades.</p>
+        </section>
+        <section class="info-section">
+            <h2>¿Qué puedes encontrar?</h2>
+            <p>Aquí podrás encontrar información de todo tipo: tutoriales, consejos, cómo usar ciertas mecánicas, diagramas para bases.</p>
+            <section class="image-section">
+                <img src="steve.jpg" alt="Steve">
+            </section>
+            <table>
+                <tr>
+                    <th>Tutorial</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><a href="https://youtu.be/-pH9pvCaItU?si=3-Fk4U1S-vG0OCsc" target="_blank">Construcción de bases</a></td>
+                    <td>Aprende a construir bases seguras y eficientes.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://youtu.be/CC7zacK2J4c?si=m0sA8JXIbixZmXzG" target="_blank">Uso de Redstone</a></td>
+                    <td>Descubre cómo usar Redstone para crear cosas complejas.</td>
+                </tr>
+                <tr>
+                    <td><a href="https://youtu.be/EN6JOMz4bxk?si=zmVKd2G_3TMLkNqL" target="_blank">Entretenimiento</a></td>
+                    <td>Siempre tiene que divertirte!!.</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Derechos reservados a EdiCraft</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.left === "0px") {
+                menu.style.left = "-250px";
+            } else {
+                menu.style.left = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
